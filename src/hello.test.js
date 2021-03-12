@@ -9,10 +9,7 @@ If the argument is empty or null, return "Hello World":
 */
 
 // TODO your code:
-function sayHello(name) {
-  if (!name) return "Hello World";
-  return "Hello " + name;
-}
+function sayHello(name) {}
 
 // Begin of tests
 const assert = require("assert");

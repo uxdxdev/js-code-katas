@@ -16,11 +16,7 @@ Don't mutate the parameter.
 */
 
 // TODO your code:
-function reverse(num) {
-  return (
-    parseFloat(num.toString().split("").reverse().join("")) * Math.sign(num)
-  );
-}
+function reverse(num) {}
 
 // Begin of tests
 const assert = require("assert");

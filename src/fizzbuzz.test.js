@@ -9,12 +9,7 @@ Create a function `fizzBuzz` which takes a number as parameter, and returns:
 */
 
 // TODO your code:
-function fizzBuzz(n) {
-  let result = "";
-  if (n % 3 === 0) result = "Fizz";
-  if (n % 5 === 0) result += "Buzz";
-  return result ? result : String(n);
-}
+function fizzBuzz(n) {}
 
 // Begin of tests
 const assert = require("assert");

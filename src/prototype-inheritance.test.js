@@ -11,7 +11,7 @@ Example:
 garfield = new Cat('garfield', 25);
 Cat.averageWeight(); // 25
 
-felix = new Cat('felix', 15);
+fluffy = new Cat('fluffy', 15);
 Cat.averageWeight();   // now 20
 
 garfield.weight = 5;
@@ -19,38 +19,7 @@ garfield.weight // 5
 Cat.averageWeight(); // now 10
 */
 
-var Cat = function (name, weight) {
-  if (!name || !weight) {
-    throw Error("please provide name and weight");
-  }
-  this.name = name;
-  this.currentWeight = weight;
-  Cat.count += 1;
-  Cat.totalWeight += weight;
-};
-
-// static values and methods directly off Cat.<value/method>
-Cat.count = 0;
-Cat.totalWeight = 0;
-Cat.averageWeight = function () {
-  return Cat.totalWeight / Cat.count;
-};
-
-// instance methods Cat.prototype.<value/method>
-Object.defineProperty(Cat.prototype, "weight", {
-  set(value) {
-    Cat.totalWeight -= this.currentWeight;
-    Cat.totalWeight += value;
-    this.currentWeight = value;
-  },
-  get() {
-    return this.currentWeight;
-  }
-});
-
-var fluffy = new Cat("fluffy", 15);
-var garfield = new Cat("garfield", 25);
-garfield.weight = 5;
+var Cat = function (name, weight) {};
 
 // Begin of tests
 const assert = require("assert");

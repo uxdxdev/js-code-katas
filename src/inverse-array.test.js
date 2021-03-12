@@ -18,10 +18,7 @@ Don't mutate the parameter.
 */
 
 // TODO your code:
-function inverse(array) {
-  if (!array || !array.length) return [];
-  return array.map((value) => value - value * 2);
-}
+function inverse(array) {}
 
 // Begin of tests
 const assert = require("assert");

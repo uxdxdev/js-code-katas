@@ -28,14 +28,7 @@ Don't mutate the parameter.
 */
 
 // TODO your code:
-function censor(sentences, forbidden) {
-  return sentences.map((sentence) =>
-    sentence
-      .split(" ")
-      .map((word) => (word === forbidden ? "*".repeat(word.length) : word))
-      .join(" ")
-  );
-}
+function censor(sentences, forbidden) {}
 
 // Begin of tests
 const assert = require("assert");
