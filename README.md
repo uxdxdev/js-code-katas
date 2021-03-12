@@ -1,2 +1,3 @@
 # js-code-katas
-Created with CodeSandbox
+
+JavaScript code katas for quick and easy practice sessions.
